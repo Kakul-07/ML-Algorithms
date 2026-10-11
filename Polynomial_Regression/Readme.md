@@ -92,7 +92,6 @@ GridSearchCV is used to find the best combination of:
 
 The polynomial degrees tested are:
 
-- 1
 - 2
 - 3
 
