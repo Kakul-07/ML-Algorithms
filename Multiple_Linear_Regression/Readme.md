@@ -472,52 +472,6 @@ This graph gives a simple visual idea of how the model is performing.
 
 ---
 
-## 20. Visualization 2 - Feature Coefficients
-
-A simple bar graph is used to display the coefficients learned by the model.
-
-```python
-plt.figure(figsize=(9, 5))
-
-plt.bar(X_train.columns, model.coef_)
-
-plt.xlabel("Features")
-plt.ylabel("Coefficient")
-plt.title("Feature Coefficients")
-plt.xticks(rotation=45)
-plt.show()
-```
-
-This graph shows the coefficient of each of the 9 features used in the model.
-
-A positive bar represents a positive coefficient, while a negative bar represents a negative coefficient.
-
-This helps in understanding the direction of the relationship learned by the regression model.
-
-
-The `diabetes_original.csv` file contains the dataset used for this project.
-
-The `multiple_linear_regression.ipynb` notebook contains the complete implementation.
-
-The `README.md` file explains the project, workflow and results.
-
----
-
-## Evaluation Metrics Used
-
-| Metric | Purpose |
-|---|---|
-| MAE | Measures the average absolute prediction error |
-| MSE | Measures the average squared prediction error |
-| RMSE | Measures the square root of MSE |
-| R² | Measures how much variation is explained by the model |
-| 5-Fold CV R² | Measures the average R² across five validation folds |
-
-For MAE, MSE and RMSE, lower values generally indicate better performance.
-
-For R², a value closer to 1 generally indicates better performance.
-
----
 
 ## What I Learned
 
